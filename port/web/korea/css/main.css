@@ -1,0 +1,93 @@
+@charset "utf-8";
+.gallery{
+    position: relative;
+    background:var(--str);
+    height: calc(100vh - 67px);
+    /* min-height: 580px; */
+}
+.gallery .slide_wrap{
+    position: relative;
+    height: 100%;
+    padding-bottom:50px;
+}
+.gallery .visual{
+    position: relative; width:100%; height: 100%;
+
+}
+.gallery .visual li{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    padding: 0 4vw;
+}
+.gallery .visual li.slide1{
+    background-image: url(../images/main/visual_01.jpg);
+}
+.gallery .visual li.slide2{
+    background-image: url(../images/main/visual_02.jpg);
+}
+.gallery .visual li.slide3{
+    background-image: url(../images/main/visual_03.jpg);
+}
+.gallery .main_txt{
+    height:calc(100% - 255px);
+    display: flex; align-items: flex-end;
+    padding-bottom:25px;
+}
+.gallery .main_txt h2{
+    color:#fff;
+    font-size:3.5rem;
+    width: 60%;
+    line-height: 1.2;
+}
+.gallery .main_btn_wrap{
+    background: #fff;
+    text-align: center;
+}
+.gallery .main_icon_wrap{
+    display: flex;
+    
+    padding: 25px 10px 20px;
+}
+.gallery .main_icon_wrap>button{
+    width:50%;
+}
+.gallery .main_icon_wrap>.main_btn_left{
+    border-right: 1px solid var(--lightColor);
+}
+.gallery .main_icon_wrap span{
+    display: block;
+}
+.gallery .main_find_wrap{
+    padding:15px 10px 10px;
+    background: url(../images/main/bg_main_map.gif) no-repeat center center/cover;
+}
+.gallery .btn_find{
+    background: var(--darkColor);
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 5px;
+}
+.gallery .main_tabmenu{
+    background: var(--str);
+    text-align: center;
+}
+.gallery .tabmenu{display: flex;}
+.gallery .tabmenu li{
+    width:calc(100%/3);
+    position: relative;
+    line-height: 50px;
+}
+
+
+.gallery .tabmenu li.swiper-slide-thumb-active{
+    color: #fff;
+}
+.gallery .tabmenu li.swiper-slide-thumb-active::before{
+    content:""; display: block;
+    width:100%; height: 3px;
+    background: var(--main);
+    
+}
